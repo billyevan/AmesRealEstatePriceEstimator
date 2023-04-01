@@ -94,10 +94,12 @@ list_neighborhoods = ('Bloomington Heights',
 'Timberland',
 'Veenker')
 
+area_sqft = 0
+
 with col1:
     area_sqft = st.number_input(
         "Total area (in square feet)",
-        min_value=0, max_value=9999999, step=1,value=0
+        min_value=0, max_value=9999999, step=1,value=1000
     )
     neigh =  st.selectbox(
         "Neighborhood",
@@ -164,4 +166,7 @@ with col2:
 price = predict_price(neigh, area_sqft, nb_bedroom, nb_kitchen, nb_bathroom)
 
 if st.button('Calculate'):
-    st.write('The estimated price is $', abs(round(price)))
+    if (area_sqft > 0):
+        st.write('The estimated price is $', abs(round(price)))
+    else:
+        st.error('Cannot calculate with such area value, please recheck your inputs!')
