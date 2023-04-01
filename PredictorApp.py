@@ -64,7 +64,7 @@ def predict_price(neighborhood, area, nb_bed, nb_bath, nb_kitch):
     return lr_clf.predict([x])[0]
 
 st.title("Real-Estate Price Estimator")
-st.header("With the help of AI and Machine Learning, find the best estimate for your real-estate in Ames, Iowa.")
+st.header("With the help of AI and Machine Learning (and some Data Science magic), find the best estimate for your real-estate in Ames, Iowa.")
 
 col1, col2 = st.columns(2)
 
