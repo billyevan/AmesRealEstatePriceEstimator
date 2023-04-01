@@ -163,4 +163,4 @@ with col2:
 price = predict_price(neigh, float(area_sqft), nb_bedroom, nb_kitchen, nb_bathroom)
 
 if st.button('Calculate'):
-    st.write('The estimated price is $', round(price))
+    st.write('The estimated price is $', abs(round(price)))
