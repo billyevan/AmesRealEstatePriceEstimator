@@ -157,9 +157,9 @@ elif neigh == 'Veenker':
 
 
 with col2:
-    nb_bedroom = st.slider('Number of bedrooms', 0, 15, 2)
-    nb_bathroom = st.slider('Number of bathroom', 0, 30, 2)
-    nb_kitchen = st.slider('Number of kitchen', 0, 10, 1)
+    nb_bedroom = st.slider('Number of bedrooms', 1, 6, 2)
+    nb_bathroom = st.slider('Number of bathroom', 1, 6, 2)
+    nb_kitchen = st.slider('Number of kitchen', 0, 3, 1)
 
 price = predict_price(neigh, area_sqft, nb_bedroom, nb_kitchen, nb_bathroom)
 
