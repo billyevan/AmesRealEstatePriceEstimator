@@ -96,7 +96,8 @@ list_neighborhoods = ('Bloomington Heights',
 
 with col1:
     area_sqft = st.number_input(
-        "Total area (in square feet)"
+        "Total area (in square feet)",
+        min_value=0, max_value=9999999, step=1,value=0
     )
     neigh =  st.selectbox(
         "Neighborhood",
@@ -160,7 +161,7 @@ with col2:
     nb_bathroom = st.slider('Number of bathroom', 0, 30, 2)
     nb_kitchen = st.slider('Number of kitchen', 0, 10, 1)
 
-price = predict_price(neigh, float(area_sqft), nb_bedroom, nb_kitchen, nb_bathroom)
+price = predict_price(neigh, area_sqft, nb_bedroom, nb_kitchen, nb_bathroom)
 
 if st.button('Calculate'):
     st.write('The estimated price is $', abs(round(price)))
