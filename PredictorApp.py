@@ -103,57 +103,57 @@ with col1:
         list_neighborhoods
     )
 
-match neigh:
-    case 'Bloomington Heights':
-        neigh = 'Blmngtn'
-    case 'Bluestem':
-        neigh = 'Blueste'
-    case 'Briardale':
-        neigh = 'BrDale'
-    case 'Brookside':
-        neigh = 'BrkSide'
-    case 'Clear Creek':
-        neigh = 'ClearCr'
-    case 'College Creek':
-        neigh = 'CollgCr'
-    case 'Crawford':
-        neigh = 'Crawfor'
-    case 'Edwards':
-        neigh = 'Edwards'
-    case 'Gilbert':
-        neigh = 'Gilbert'
-    case 'Iowa DOT and Rail Road':
-        neigh = 'IDOTRR'
-    case 'Meadow Village':
-        neigh = 'MeadowV'
-    case 'Mitchell':
-        neigh = 'Mitchel'
-    case 'North Ames':
-        neigh = 'Names'
-    case 'Northridge':
-        neigh = 'NoRidge'
-    case 'Northpark Villa':
-        neigh = 'NPkVill'
-    case 'Northridge Heights':
-        neigh = 'NridgHt'
-    case 'Northwest Ames':
-        neigh = 'NWAmes'
-    case 'Old Town':
-        neigh = 'OldTown'
-    case 'South & West of Iowa State University':
-        neigh = 'SWISU'
-    case 'Sawyer':
-        neigh = 'Sawyer'
-    case 'Sawyer West':
-        neigh = 'SawyerW'
-    case 'Somerset':
-        neigh = 'Somerst'
-    case 'Stone Brook':
-        neigh = 'StoneBr'
-    case 'Timberland':
-        neigh = 'Timber'
-    case 'Veenker':
-        neigh = 'Veenker'
+if neigh == 'Bloomington Heights':
+    neigh = 'Blmngtn'
+elif neigh == 'Bluestem':
+    neigh = 'Blueste'
+elif neigh == 'Briardale':
+    neigh = 'BrDale'
+elif neigh == 'Brookside':
+    neigh = 'BrkSide'
+elif neigh == 'Clear Creek':
+    neigh = 'ClearCr'
+elif neigh == 'College Creek':
+    neigh = 'CollgCr'
+elif neigh == 'Crawford':
+    neigh = 'Crawfor'
+elif neigh == 'Edwards':
+    neigh = 'Edwards'
+elif neigh == 'Gilbert':
+    neigh = 'Gilbert'
+elif neigh == 'Iowa DOT and Rail Road':
+    neigh = 'IDOTRR'
+elif neigh == 'Meadow Village':
+    neigh = 'MeadowV'
+elif neigh == 'Mitchell':
+    neigh = 'Mitchel'
+elif neigh == 'North Ames':
+    neigh = 'Names'
+elif neigh == 'Northridge':
+    neigh = 'NoRidge'
+elif neigh == 'Northpark Villa':
+    neigh = 'NPkVill'
+elif neigh == 'Northridge Heights':
+    neigh = 'NridgHt'
+elif neigh == 'Northwest Ames':
+    neigh = 'NWAmes'
+elif neigh == 'Old Town':
+    neigh = 'OldTown'
+elif neigh == 'South & West of Iowa State University':
+    neigh = 'SWISU'
+elif neigh == 'Sawyer':
+    neigh = 'Sawyer'
+elif neigh == 'Sawyer West':
+    neigh = 'SawyerW'
+elif neigh == 'Somerset':
+    neigh = 'Somerst'
+elif neigh == 'Stone Brook':
+    neigh = 'StoneBr'
+elif neigh == 'Timberland':
+    neigh = 'Timber'
+elif neigh == 'Veenker':
+    neigh = 'Veenker'
+
 
 with col2:
     nb_bedroom = st.slider('Number of bedrooms', 0, 15, 2)
